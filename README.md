@@ -79,9 +79,31 @@ npm run dev
 
 Then open http://localhost:5173 in your browser.
 
+## Deployment
+
+The application can be deployed to Bolt or similar Node.js hosting platforms:
+
+**Build:**
+```bash
+npm install
+npm run build
+```
+
+**Start:**
+```bash
+npm start
+```
+
+The server will serve the frontend and proxy API requests to the Python backend.
+
+**Note:** For production deployment, you'll need to:
+1. Deploy the Python backend separately (e.g., on a Python hosting service)
+2. Set the `BACKEND_URL` environment variable to point to your backend
+3. Ensure all environment variables are configured (OPENROUTER_API_KEY, Supabase credentials)
+
 ## Tech Stack
 
-- **Backend:** FastAPI (Python 3.10+), async httpx, OpenRouter API
+- **Backend:** FastAPI (Python 3.10+), async httpx, OpenRouter API, Supabase
 - **Frontend:** React + Vite, react-markdown for rendering
-- **Storage:** JSON files in `data/conversations/`
+- **Storage:** Supabase PostgreSQL database
 - **Package Management:** uv for Python, npm for JavaScript
