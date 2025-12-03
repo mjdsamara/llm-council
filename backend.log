@@ -1,4 +1,16 @@
-INFO:     Started server process [299]
+Downloading cpython-3.10.19-linux-x86_64-gnu (download) (27.8MiB)
+ Downloaded cpython-3.10.19-linux-x86_64-gnu (download)
+Using CPython 3.10.19
+Creating virtual environment at: .venv
+Downloading pydantic-core (2.0MiB)
+Downloading cryptography (4.3MiB)
+Downloading uvloop (3.5MiB)
+ Downloaded pydantic-core
+ Downloaded uvloop
+ Downloaded cryptography
+Installed 43 packages in 43ms
+INFO:     Started server process [340]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53132 - "GET / HTTP/1.1" 200 OK
